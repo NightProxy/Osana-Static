@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1764FF">
+    <link rel="stylesheet" href="/dist.css">
+    <link rel="prerender" href="/static/osana/osana.worker.js" as="script" type="text/javascript" />
+    <link rel="prerender" href="/sw.js" as="script" type="text/javascript" />
+    <title>Osana</title>
+    <meta property="og:title" content="Osana" />
+    <meta name="description" content="An interception based web proxy." />
+    <meta property="og:description" content="An interception based web proxy." />
+    <script src="/static/osana/osana.bundle.js"></script>
+    <script src="/static/osana/osana.config.js"></script>
+    <script src="/script.js" defer></script>
+    <script async src="https://arc.io/widget.min.js#ZyPFcsmQ"></script>
+  </head>
+  <body class="bg-[#1764FF]">
+    <div class="h-full w-full flex justify-center items-center flex-col">
+      <img class="h-24" src="/icon.png" alt="Osana">
+      <h1 class="text-white m-3 text-4xl font-semibold">Osana</h1>
+      <input class="bg-transparent w-80 border m-3 px-3 py-2 rounded-lg text-white focus:outline-none placeholder:text-white" type="text" id="search" placeholder="Search The Web">
+    </div>
+    <p class="p-1 fixed bottom-0 left-0 text-neutral-200">Osana ©️ Nebula Services 2022</p>
+    <p class="p-1 fixed bottom-0 right-0 text-neutral-200">v0.0.13 Beta</p>
+  </body>
+</html>
