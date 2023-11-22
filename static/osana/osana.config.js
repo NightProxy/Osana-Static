@@ -1,5 +1,5 @@
 (()=>{"use strict";self.__osana$config={
-    bare:`https://andromeda-osana-bare.vercel.app/`,
+    bare:`https://andromeda-bare.vercel.app/`,
     prefix:"/static/osana/",
     codec:self.__osana$bundle.codecs.xor,
     files:{
