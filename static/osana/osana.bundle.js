@@ -14070,8 +14070,7 @@
                         'x-frame-options',
                         'x-permitted-cross-domain-policies',
                         'x-powered-by',
-                        'x-xss-protection',
-                        'access-control-allow-origin',],
+                        'x-xss-protection',],
                     forward_headers: ["accept-encoding", "accept-language", "sec-websocket-extensions", "sec-websocket-key", "sec-websocket-version", 'connection', 'content-length',],
                     id: o
                 }))]);
