@@ -14053,8 +14053,25 @@
                         port: s,
                         path: a
                     },
-                    headers: e,
-                    forward_headers: ["accept-encoding", "accept-language", "sec-websocket-extensions", "sec-websocket-key", "sec-websocket-version"],
+                    headers: [
+                        e, 
+                        'cross-origin-embedder-policy', 
+                        'cross-origin-opener-policy', 
+                        'cross-origin-resource-policy',
+                        'content-security-policy',
+                        'content-security-policy-report-only',
+                        'expect-ct',
+                        'feature-policy',
+                        'origin-isolation',
+                        'strict-transport-security',
+                        'upgrade-insecure-requests',
+                        'x-content-type-options',
+                        'x-download-options',
+                        'x-frame-options',
+                        'x-permitted-cross-domain-policies',
+                        'x-powered-by',
+                        'x-xss-protection'],
+                    forward_headers: ["accept-encoding", "accept-language", "sec-websocket-extensions", "sec-websocket-key", "sec-websocket-version", 'connection', 'content-length',],
                     id: o
                 }))]);
                 return i.meta = new Promise(((e,t)=>{
