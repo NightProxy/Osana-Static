@@ -14046,7 +14046,7 @@
                 if (!r.ok)
                     throw new va(r.status,await r.json());
                 const o = await r.text()
-                  , i = new Oa(this.ws,["bare", Ha(JSON.stringify({
+                  , i = new Oa(this.ws,["/", Ha(JSON.stringify({
                     remote: {
                         protocol: t,
                         host: n,
